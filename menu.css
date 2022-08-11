@@ -1,0 +1,334 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Julius Sans One', sans-serif; ;
+    
+}
+
+.overflow-x{
+   overflow-x:hidden; 
+   background-color: #adada9;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+.header{
+    height: 100vh;
+}
+
+.nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 12vh;
+    list-style: none;
+    background-color: rgb(0,0 ,0,.75);
+    z-index: 100;
+}
+
+.div-imgs{
+    display: flex;
+    width: 100%;
+}
+
+.div-img{
+   display: flex;
+}
+
+.div-img:nth-child(2){
+    left: 100vw;
+}
+
+.div-img:nth-child(3){
+    left: 200vw;
+}
+
+.img{
+    height: 100vh;
+    z-index: 0;
+    width: 100vw;
+    transition: 1.3s;
+    -webkit-transition: 1.3s;
+    -moz-transition: 1.3s;
+    -ms-transition: 1.3s;
+    -o-transition: 1.3s;
+}
+
+.scroll-nav{
+    background-color: rgb(0, 0, 0,.75);
+}
+
+.nav-div{
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-div:first-child{
+    justify-content: flex-end;
+}
+
+.nav-div:nth-child(3){
+    justify-content: flex-start;
+}
+
+.nav-item{
+    color: rgb(206, 205, 205);
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.nav-item:hover{
+    border-bottom:solid 3px #e0ca90 ;
+    color: white;
+}
+
+.nav-item:active{
+    color:rgb(206, 205, 205)
+}
+
+.arrow-left{
+    font-size: 8vh;
+    top: 41vh;
+    left: 10%;
+    position: absolute;
+    color: rgb(0, 0, 0,.75);
+}
+
+.arrow-right{
+    font-size: 8vh;
+    top: 41vh;
+    right: 10%;
+    position: absolute;
+    color: rgb(0, 0, 0,.75);
+}
+
+.arrow-left:active{
+    transform: scale(.8);
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    -o-transform: scale(.8);
+}
+
+.arrow-right:active{
+    transform: scale(.8);
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    -o-transform: scale(.8);
+}
+
+.circles-div{
+    position: absolute;
+    top: 80vh;
+    left: 46.5%;
+    z-index: 1000;
+    height: 5vh;
+    width: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.circle{
+    height: .6vw;
+    width: .6vw;
+    background-color: rgb(0, 0, 0,.6);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.circle:first-child{
+    background-color: black;
+}
+
+.div-comida{
+    position: absolute;
+    top: 35vh;
+    left:18%;
+}
+
+.comida{
+    font-size: 30px;
+    display: inline;
+    padding: 30px;
+    background-color: rgb(173, 171, 171,.4);
+}
+
+.menu{
+    margin-top: 150px;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+.main-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-menu{
+    width: 60%;
+}
+
+.titulo-menu{
+    font-size: 30px;
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+
+.div-menu-carta{    
+    display: flex;
+    flex-direction: column;
+    background-color: #e0ca90;
+    box-shadow: -10px 10px 30px #867959;
+}
+
+.div-menu-line{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item{
+    font-size: 15px;
+    padding: 15px;
+}
+
+.reserva-div{
+    background-color: #adada9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.reserva{
+    padding: 35px;
+    border: solid 1px black;
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(206, 206, 206);
+    background:linear-gradient(black,rgb(200,200,200))
+}
+
+.reserva:hover{
+    text-decoration: none;
+    border: solid 1px black;
+    color:white;
+    
+}
+
+.div-menu:last-child{
+    margin-bottom: 100px;
+}
+
+.hamburguesa{
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    font-size: 8vh;
+    color: rgb(224, 221, 221);
+    z-index: 100;
+    transition: 1.3s;
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+}
+
+.menu-hamburguesa{
+    position: fixed;
+    top: 0;
+    left: -600px;
+    height: 100vh;
+    width: 600px;
+    background-color: rgb(0, 0, 0,.75);
+    transition: 1.3s;
+    -webkit-transition: 1.3s;
+    -moz-transition: 1.3s;
+    -ms-transition: 1.3s;
+    -o-transition: 1.3s;
+}
+
+.hamburguesa-items-div{
+    position: relative;
+    top: 15vh;
+    
+}
+
+.a-hamburguesa-item{
+    color: white;
+    text-decoration: none;
+}
+
+.a-hamburguesa-item:visited{
+    color: white;
+}
+
+.hamburguesa-item{
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    margin: 50px;
+    border: rgb(224, 221, 221) solid 4px;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+    .hamburguesa{
+        visibility: visible;
+    }
+    .nav{
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .comida{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .comida{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .comida{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .div-menu{
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .div-comida{
+        left: 50px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .comida{
+        font-size: 4vw;
+        padding: 4vw;
+    }
+}

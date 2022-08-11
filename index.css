@@ -1,0 +1,418 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Julius Sans One', sans-serif; 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.body{
+    background-color: black;
+}
+
+.header{
+    height: 100vh;
+    background-image: url(img/Fondo.jpg);
+    background-size: cover;
+    background-position-y:100%;
+}
+
+.scroll-nav{
+    background-color: rgb(0, 0, 0,.75);
+
+}
+
+.nav{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 12vh;
+    list-style: none;
+    transition: background;
+    -webkit-transition: background;
+    -moz-transition: background;
+    -ms-transition: background;
+    -o-transition: background;
+    transition-duration: .5s;
+}
+
+.nav-div{
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-div:first-child{
+    justify-content: flex-end;
+}
+
+.nav-div:nth-child(3){
+    justify-content:flex-start;
+}
+
+.nav-item{
+    color: rgb(206, 205, 205);
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.nav-item:hover{
+    border-bottom:solid 3px #e0ca90 ;
+    color: white;
+}
+
+.nav-item:active{
+    color:rgb(206, 205, 205)
+}
+
+.logo-div{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 12vh;
+}
+
+.logo{
+    display: inline;
+    padding-top: 7vh;
+    height: 35vh;
+}
+
+.reserva-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.reserva{
+    padding: 35px;
+    border: solid 1px rgb(206, 205, 205);
+    text-decoration: none;
+    font-size: 30px;
+    color: rgb(206, 205, 205);
+}
+
+.reserva:hover{
+    text-decoration: none;
+    background-color: rgb(206, 205, 205);
+    border: solid 1px black;
+    color:black;
+}
+
+.reserva:active{
+    text-decoration: none;
+}
+
+.main{
+    background:radial-gradient(circle,white,rgb(175, 175, 175));
+}
+
+.h1-div{
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    align-items: center;
+}
+
+.h1{
+    font-size: 75px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.section1{
+    display: flex;
+    align-items: center;
+    padding-bottom: 200px;
+}
+
+.section1-texto-div{
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    margin-left: 15%;
+}
+
+.section1-texto{
+    font-size: 45px;
+}
+
+.section1-imagen-div{
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    margin-right: 5%;
+}
+
+.section1-imagen{
+    height: 40vh;
+    box-shadow:15px 15px 50px black;
+}
+
+.section1-hr-div{
+    display: flex;
+    justify-content: center;
+}
+
+.section1-hr{
+    width: 50%;
+
+}
+
+.section2{
+    display: flex;    
+    align-items: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.section2-imagen-div{
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+.section2-imagen{
+    height: 35vh;
+    box-shadow: -15px 15px 50px black;
+}
+
+.section2-texto-div{
+    display: flex;
+    justify-content: end;
+    width: 25%;
+    margin-right: 15%;
+}
+
+.section2-texto{
+    font-size: 45px;
+}
+
+.footer-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(63, 62, 62);
+}
+
+.footer-contacto-h2-div{
+    padding-top: 10vh;
+}
+
+.footer-contacto-h2{
+    color: #e0ca90;
+}
+
+.footer-contacto-h4-div{
+    padding-top: 3vh;
+}
+
+.footer-contacto-h4{
+    color: #e0ca90;
+}
+
+.footer-contacto-divP{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    padding-top: 10vh;
+    padding-bottom: 60px;
+}
+
+.footer-contacto-div{
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.contacto-hr{
+    border-color: rgb(206, 205, 205);
+}
+
+.footer-contacto-h3{
+    font-size: 30px;
+    color: #e0ca90;
+}
+
+.footer-contacto-h5{
+    font-size: 20px;
+    padding-top: 70px;
+    color: #e0ca90;
+}
+
+.a-icons{
+    color: rgb(175, 175, 175);
+}
+
+.div-div-icons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.div-icons{
+    width: 30%;
+    display: flex;
+    justify-content:space-evenly;
+    padding-bottom: 100px;
+}
+
+.icons{
+    font-size: 30px;
+}
+
+.footer2{
+    height: 35vh;
+    background-color: black;
+}
+
+.hamburguesa{
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    font-size: 8vh;
+    color: rgb(224, 221, 221);
+    z-index: 100;
+    transition: 1.3s;
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+}
+
+.menu-hamburguesa{
+    position: fixed;
+    top: 0;
+    left: -600px;
+    height: 100vh;
+    width: 600px;
+    background-color: rgb(0, 0, 0,.75);
+    transition: 1.3s;
+    -webkit-transition: 1.3s;
+    -moz-transition: 1.3s;
+    -ms-transition: 1.3s;
+    -o-transition: 1.3s;
+}
+
+.hamburguesa-items-div{
+    position: relative;
+    top: 15vh;
+    
+}
+
+.a-hamburguesa-item{
+    color: white;
+    text-decoration: none;
+}
+
+.a-hamburguesa-item:visited{
+    color: white;
+}
+
+.hamburguesa-item{
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    margin: 50px;
+    border: rgb(224, 221, 221) solid 4px;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+    .footer-contacto-divP{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .hamburguesa{
+        visibility: visible;
+    }
+    .menu-hamburguesa{
+        visibility: visible;
+    }
+    .nav{
+        visibility: hidden;
+    }
+    .section1{
+        flex-direction: column-reverse;
+        padding-bottom: 100px;
+    }
+    .section1-imagen-div{
+        margin-right: 0;
+    }
+    .section1-texto-div{
+        margin-left: 0;
+        width: 50%;
+    }
+    .section1-texto{
+        padding-top: 100px;
+
+    }
+    .section2{
+        flex-direction: column;
+        padding-bottom: 100px;
+        padding-top: 100px;
+    }
+    .section2-texto{
+        padding-top: 100px;
+    }
+    .section2-imagen-div{
+        margin: 0;
+    }
+    .section2-texto-div{
+        width: 50%;
+        margin: 0;
+    }
+    .footer-contacto-divP{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .footer-contacto-h3{
+        font-size: 20px;
+    }
+    .footer-contacto-h5{
+        font-size: 20px;
+    }
+    .section1-texto{
+        font-size: 30px;
+    }
+    .section2-texto{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .menu-hamburguesa{
+        width: 100vw;
+    }
+    .footer-contacto-divP{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-contacto-div{
+        padding: 20px;
+    }
+    .contacto-hr{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section1-imagen{
+        height:25vh;
+    }
+    .section2-imagen{
+        height: 25vh;
+    }
+}
+
