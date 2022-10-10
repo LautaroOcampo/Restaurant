@@ -275,7 +275,7 @@ html{
     top: 50px;
     left: 50px;
     font-size: 8vh;
-    color: rgb(224, 221, 221);
+    color: #a3a3a3;
     z-index: 100;
     transition: 1.3s;
     -webkit-transition: 1.5s;
@@ -318,7 +318,7 @@ html{
     font-size: 30px;
     padding: 20px;
     margin: 50px;
-    border: rgb(224, 221, 221) solid 4px;
+    border: #a3a3a3 solid 4px;
 }
 
 .hidden{

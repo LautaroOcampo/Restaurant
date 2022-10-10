@@ -318,6 +318,9 @@ html{
     .div-menu{
         width: 90vw;
     }
+    .menu-hamburguesa{
+        width: 100vw;
+    }
 }
 
 @media screen and (max-width: 450px) {
