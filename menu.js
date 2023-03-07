@@ -20,14 +20,14 @@ arrowRight[0].addEventListener("click", () => {
         img[1].style.transform = `translateX(${position}%)`
         img[2].style.transform = `translateX(${position}%)`
         if(position === 0){
-            comida.innerHTML = "PANQUEQUES CON FRUTILLA"
+            comida.innerHTML = "STRAWBERRIES PANCAKES"
             for(ele of circle){
                 ele.style.backgroundColor = "rgb(0,0,0,.6)"
             }
             circle[0].style.backgroundColor = "black"
         }
         else if(position === -100){
-            comida.innerHTML = "PIZZA CON TOMATE Y ALBAHACA"
+            comida.innerHTML = "MARGHERITA PIZZA"
             for(ele of circle){
                 ele.style.backgroundColor = "rgb(0,0,0,.6)"
             }
@@ -35,7 +35,7 @@ arrowRight[0].addEventListener("click", () => {
             img[1].classList.toggle("fixed")
         }
         else if(position === -200){
-            comida.innerHTML = "FIDEOS CON SALSA"
+            comida.innerHTML = "PASTA"
             for(ele of circle){
                 ele.style.backgroundColor = "rgb(0,0,0,.6)"
             }
@@ -51,21 +51,21 @@ arrowLeft[0].addEventListener("click", () => {
         img[1].style.transform = `translateX(${position}%)`
         img[2].style.transform = `translateX(${position}%)`
         if(position === 0){
-            comida.innerHTML = "PANQUEQUES CON FRUTILLA"
+            comida.innerHTML = "STRAWBERRIES PANCAKES"
             for(ele of circle){
                 ele.style.backgroundColor = "rgb(0,0,0,.6)"
             }
             circle[0].style.backgroundColor = "black"
         }
         else if(position === -100){
-            comida.innerHTML = "PIZZA CON TOMATE Y ALBAHACA"
+            comida.innerHTML = "MARGHERITA PIZZA"
             for(ele of circle){
                 ele.style.backgroundColor = "rgb(0,0,0,.6)"
             }
             circle[1].style.backgroundColor = "black"
         }
         else if(position === -200){
-            comida.innerHTML = "FIDEOS CON SALSA"
+            comida.innerHTML = "PASTA"
             for(ele of circle){
                 ele.style.backgroundColor = "rgb(0,0,0,.6)"
             }
